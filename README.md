@@ -7,6 +7,8 @@ Savant is a powerful but lightweight object-oriented template system for PHP.
 
 Unlike other template systems, Savant by default does not compile your templates into PHP; instead, it uses PHP itself as its template language so you don't need to learn a new markup system.
 
+ADDED: Forms plugins to this version, otherwise identical to forked version from saltybeagle/Savant3
+
 Why Use Savant for Templates?
 -----------------------------
 
