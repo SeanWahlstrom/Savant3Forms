@@ -1,11 +1,15 @@
 {
-    "name": "saltybeagle/savant3",
-    "description": "Savant3 template engine",
+    "name": "artistan/savant3",
+    "description": "Savant3 template engine w/ Forms Plugins",
     "license": "LGPL",
     "authors": [
         {
             "name": "Brett Bieber",
             "email": "brett.bieber@gmail.com"
+        },
+        {
+            "name": "Charles Peterson",
+            "email": "artistan@gmail.com"
         }
     ],
     "autoload": {
