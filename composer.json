@@ -1,7 +1,7 @@
 {
     "name": "artistan/savant3forms",
     "description": "Savant3 template engine w/ Forms Plugins",
-    "license": "LGPL-3.0+-only",
+    "license": "LGPL-3.0-only",
     "authors": [
         {
             "name": "Brett Bieber",
