@@ -1067,9 +1067,11 @@ class Savant3 {
 				// silence errors in the filters. Hendy Irawan provided
 				// the next three lines as a "verbose" fix.
 				ob_start();
-				include $this->__config['fetch'];
+				if(file_exists($this->__config['fetch'])) {
+					include $this->__config['fetch'];
+				}
 				echo $this->applyFilters(ob_get_clean());
-			} else {
+			} else if(file_exists($this->__config['fetch'])) {
 				// no filters being used.
 				include $this->__config['fetch'];
 			}
@@ -1227,7 +1229,7 @@ class Savant3 {
 				// load the Savant3_Filter_*.php resource
 				$file = $callback[0] . '.php';
 				$result = $this->findFile('resource', $file);
-				if ($result) {
+				if (file_exists($result)) {
 					include_once $result;
 				}
 			}
