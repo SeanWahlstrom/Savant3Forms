@@ -111,7 +111,7 @@ class Savant3_Error {
 	*
 	* @access public
 	*
-	* @return void
+	* @return string
 	*/
 	
 	public function __toString()
@@ -119,7 +119,10 @@ class Savant3_Error {
 		ob_start();
 		echo get_class($this) . ': ';
 		print_r(get_object_vars($this));
-		return ob_get_clean();
+
+        	$str = ob_get_clean();
+
+		return !empty($str) ? $str : '';
 	}
 }
 ?>
