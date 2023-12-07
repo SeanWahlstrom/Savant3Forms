@@ -86,7 +86,7 @@ class Savant3_Plugin_date extends Savant3_Plugin {
 	* @param string $format The strftime() formatting string, or a named
 	* custom string key from $this->custom.
 	* 
-	* @return string The formatted date string.
+	* @return string|void The formatted date string.
 	* 
 	*/
 	
@@ -113,10 +113,9 @@ class Savant3_Plugin_date extends Savant3_Plugin {
 		// convert the date string to the specified format
 		if (trim($datestring != '')) {
 			return strftime($format, strtotime($datestring));
-		} else {
-			// no datestring, return VOID
-			return;
 		}
+
+        //return void if $datestring was empty in the previous check
 	}
 
 }

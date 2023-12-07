@@ -118,7 +118,7 @@ class Savant3_Filter_trimwhitespace extends Savant3_Filter {
 	* 
 	* @param string $search The string to search for.
 	* 
-	* @param string $replace Replace with this text.
+	* @param string[] $replace Replace with this text.
 	* 
 	* @param string &$buffer The source text.
 	* 

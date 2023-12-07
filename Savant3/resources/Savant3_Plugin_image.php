@@ -116,10 +116,6 @@ class Savant3_Plugin_image extends Savant3_Plugin {
 			$file = $this->imageDir . $file;
 			$tmp = $this->documentRoot . $file;
 			$info = @getimagesize($tmp);
-		} else {
-			// don't attempt to get file info from streams, it takes
-			// way too long.
-			$info = false;
 		}
 		
 		// did we find the file info?
